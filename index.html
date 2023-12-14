@@ -1,0 +1,441 @@
+<!-- https://preview.themeforest.net/item/akkhor-school-management-admin-template/full_screen_preview/23687250 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Pannel</title>
+  <!-- favicon  -->
+  <link rel="icon" href="assets/images/mainfav.png" />
+  <!-- fonts -->
+  <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
+  <!-- fontawesome-->
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <!-- calendar js  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="assets/css/stylesheet.css" />
+  <!-- media  -->
+  <link rel="stylesheet" href="assets/css/media.css" />
+</head>
+
+<body>
+  <!-- header starts  -->
+  <header>
+    <div class="row d-flex justify-between align-center">
+      <div class="search">
+        <a href="javascript:void(0)">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <input type="search" name="" id="" placeholder="Search Something...." />
+      </div>
+      <img src="assets/images/logo.png" alt="" class="logo-img-main bg-golden" />
+      <div class="h-right h-rt d-flex justify-end align-center">
+        <div class="profile d-flex align-center">
+          <div class="user">
+            <h3>Steve Zone</h3>
+            <p>Admin</p>
+          </div>
+          <img src="assets/images/admin.jpg" alt="" />
+          <div class="admin-list admin-drop">
+            <h2>Steve Zone</h2>
+            <ul>
+              <li><i class="fa-solid fa-user"></i>My Profile</li>
+              <li><i class="fa-solid fa-list-check"></i>Task</li>
+              <li><i class="fa-solid fa-envelope"></i>Message</li>
+              <li><i class="fa-solid fa-gears"></i>Account</li>
+            </ul>
+          </div>
+        </div>
+        <div class="language d-flex justify-evenly">
+          <i class="fa-solid fa-earth-americas"></i>
+          <p>EN</p>
+          <i class="fa-solid fa-caret-down "></i>
+          <div class="lang-list">
+            <ul class="lang-items">
+              <li>GUJRATI</li>
+              <li>HINDI</li>
+              <li>SPANISH</li>
+              <li>FRENCH</li>
+              <li>ITALIAN</li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="modes">
+          <i class="fa-solid fa-moon mode-switch"></i>
+        </div> -->
+        <div class="log-in-out d-flex justify-center">
+          <a href="login.html">
+            <p class="btn">Logout</p>
+          </a>
+        </div>
+      </div>
+      <div class="sm-tglr">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-people-group sm-screen"></i>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- aside starts  -->
+  <aside>
+    <div class="logo d-flex justify-around align-center">
+      <!-- <a href="login.html"> -->
+      <img src="assets/images/logo.png" class="logo-img" alt="" />
+      <!-- </a> -->
+      <i class="fa-solid fa-bars-staggered align-center bar"></i>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-gauge w-2"></i>
+            <span class="nav-title">Dashboard</span>
+            <i class="fa-solid fa-chevron-right drop"></i>
+          </a>
+          <ul class="dropdown d-none">
+            <li>Admin</li>
+            <li>Studets</li>
+            <li>Parents</li>
+            <li>Teachers</li>
+          </ul>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-children w-2"></i>
+            <span class="nav-title">Students</span>
+            <i class="fa-solid fa-chevron-right drop"></i>
+          </a>
+          <ul class="dropdown d-none">
+            <li>Admin</li>
+            <li>Studets</li>
+            <li>Parents</li>
+            <li>Teachers</li>
+          </ul>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-person-chalkboard w-2"></i>
+            <span class="nav-title">Teachers</span>
+            <i class="fa-solid fa-chevron-right drop"></i>
+          </a>
+          <ul class="dropdown d-none">
+            <li>Admin</li>
+            <li>Studets</li>
+            <li>Parents</li>
+            <li>Teachers</li>
+          </ul>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-people-roof w-2"></i>
+            <span class="nav-title">Parents</span>
+            <i class="fa-solid fa-chevron-right drop"></i>
+          </a>
+          <ul class="dropdown d-none">
+            <li>Admin</li>
+            <li>Studets</li>
+            <li>Parents</li>
+            <li>Teachers</li>
+          </ul>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-book w-2"></i>
+            <span class="nav-title">Library</span>
+            <i class="fa-solid fa-chevron-right drop"></i>
+          </a>
+          <ul class="dropdown d-none">
+            <li>Admin</li>
+            <li>Studets</li>
+            <li>Parents</li>
+            <li>Teachers</li>
+          </ul>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-file-invoice w-2"></i>
+            <span class="nav-title">Accounts</span>
+            <i class="fa-solid fa-chevron-right drop"></i>
+          </a>
+          <ul class="dropdown d-none">
+            <li>Admin</li>
+            <li>Studets</li>
+            <li>Parents</li>
+            <li>Teachers</li>
+          </ul>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-pen-ruler w-2"></i>
+            <span class="nav-title">Class</span>
+            <i class="fa-solid fa-chevron-right drop"></i>
+          </a>
+          <ul class="dropdown d-none">
+            <li>Admin</li>
+            <li>Studets</li>
+            <li>Parents</li>
+            <li>Teachers</li>
+          </ul>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-book-open w-2"></i>
+            <span class="nav-title">Subject</span>
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-regular fa-paste w-2"></i>
+            <span class="nav-title">Class Routine</span>
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-sheet-plastic w-2"></i>
+            <span class="nav-title">Attendence</span>
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-regular fa-keyboard w-2"></i>
+            <span class="nav-title">Exam</span>
+            <i class="fa-solid fa-chevron-right drop"></i>
+          </a>
+          <ul class="dropdown d-none">
+            <li>Admin</li>
+            <li>Studets</li>
+            <li>Parents</li>
+            <li>Teachers</li>
+          </ul>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-car-burst w-2"></i>
+            <span class="nav-title">Transport</span>
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-hotel w-2"></i>
+            <span class="nav-title">Hostel</span>
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-circle-info w-2"></i>
+            <span class="nav-title">Notice</span>
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-message w-2"></i>
+            <span class="nav-title">Messages</span>
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-boxes-stacked w-2"></i>
+            <span class="nav-title">UI Elements</span>
+            <i class="fa-solid fa-chevron-right drop"></i>
+          </a>
+          <ul class="dropdown d-none">
+            <li>Admin</li>
+            <li>Studets</li>
+            <li>Parents</li>
+            <li>Teachers</li>
+          </ul>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-location-dot w-2"></i>
+            <span class="nav-title">Map</span>
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="javascript:void(0)" class="nav-link">
+            <i class="fa-solid fa-user-secret w-2"></i>
+            <span class="nav-title">Accounts</span>
+            <i class="fa-solid fa-chevron-right drop"></i>
+          </a>
+          <ul class="dropdown d-none">
+            <li>Admin</li>
+            <li>Studets</li>
+            <li>Parents</li>
+            <li>Teachers</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- main starts  -->
+  <main>
+    <section id="main">
+      <div class="main-title">
+        <h3>Admin Dashboard</h3>
+        <p>
+          Home <span> <a href="index.html"> > Admin</a></span>
+        </p>
+      </div>
+      <div class="main-content">
+        <div class="dashboard-students d-flex align-center justify-evenly">
+          <i class="fa-solid fa-children"></i>
+          <div>
+            <h4>Students</h4>
+            <span class="count">2000</span>
+          </div>
+        </div>
+        <div class="dashboard-teachers d-flex align-center justify-evenly">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <div>
+            <h4>Teachers</h4>
+            <span class="count">200</span>
+          </div>
+        </div>
+        <div class="dashboard-parents d-flex align-center justify-evenly">
+          <i class="fa-solid fa-people-group"></i>
+          <div>
+            <h4>Parents</h4>
+            <span class="count">3948</span>
+          </div>
+        </div>
+        <div class="dashboard-earnings d-flex align-center justify-evenly">
+          <i class="fa-solid fa-sack-dollar"></i>
+          <div>
+            <h4>Earnings</h4>
+            <span class="count">20000</span>
+          </div>
+        </div>
+        <div class="earnings-graph">
+          <div id="echart"></div>
+        </div>
+        <div class="expenses-graph">
+          <div id="expchart"></div>
+        </div>
+        <div class="students-graph">
+          <div id="nut"></div>
+        </div>
+        <div class="event-calender">
+          <div class="cal-container">
+            <div class="calendar">
+              <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                  <h1></h1>
+                  <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+              </div>
+              <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="days"></div>
+            </div>
+          </div>
+        </div>
+        <div class="branches">
+          <div class="overlay">
+            <p>Our Branches</p>
+          </div>
+          <div id="bchart"></div>
+        </div>
+        <div class="notice-board">
+          <h3>Notice Board</h3>
+          <div class="notice">
+            <div class="bdr-btm-1px p-xy-1rem">
+              <span class="btn clr-red">16 June, 2025</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, voluptatibus!
+              </p>
+              <p>Selmon Boi /<span> 5 min ago</span></p>
+            </div>
+            <div class="bdr-btm-1px p-xy-1rem">
+              <span class="btn clr-green">16 June, 2025</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, voluptatibus!
+              </p>
+              <p>Selmon Boi /<span> 5 min ago</span></p>
+            </div>
+            <div class="bdr-btm-1px p-xy-1rem">
+              <span class="btn clr-yellow">16 June, 2025</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, voluptatibus!
+              </p>
+              <p>Selmon Boi /<span> 5 min ago</span></p>
+            </div>
+            <div class="bdr-btm-1px p-xy-1rem">
+              <span class="btn clr-pink">16 June, 2025</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, voluptatibus!
+              </p>
+              <p>Selmon Boi /<span> 5 min ago</span></p>
+            </div>
+            <div class="bdr-btm-1px p-xy-1rem">
+              <span class="btn clr-red">16 June, 2025</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, voluptatibus!
+              </p>
+              <p>Selmon Boi /<span> 5 min ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="facebook-handle">
+          <a href="javascript:void(0)">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="color-white">Like us on Facebook</span>
+            <p class="count color-white">500</p>
+          </a>
+        </div>
+        <div class="twitter-handle">
+          <a href="javascript:void(0)">
+            <i class="fa-brands fa-twitter"></i>
+            <span class="color-white">Like us on Twitter</span>
+            <p class="count color-white">600</p>
+          </a>
+        </div>
+        <div class="gplus-handle">
+          <a href="javascript:void(0)">
+            <i class="fa-brands fa-google-plus"></i>
+            <span class="color-white">See us on GooglePlus</span>
+            <p class="count color-white">300</p>
+          </a>
+        </div>
+        <div class="linkedin-handle">
+          <a href="javascript:void(0)">
+            <i class="fa-brands fa-linkedin"></i>
+            <span class="color-white">Follow us on Linkedin</span>
+            <p class="count color-white">700</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- jquery  -->
+  <script src="assets/jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <!-- apexcharts js -->
+  <script src="assets/jquery/apexcharts.js"></script>
+  <!-- maps js  -->
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+  <script src="https://www.amcharts.com/lib/4/geodata/india2019High.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+  <!-- custom charts  -->
+  <script src="assets/jquery/apex.js"></script>
+  <!-- custom js  -->
+  <script src="assets/jquery/main.js"></script>
+</body>
+
+</html>
