@@ -1,21 +1,22 @@
 @media(max-width:768px) {
     aside {
         display: none;
+        transition: none;
+        /* padding-top: 10px; */
     }
 
     header {
         margin-left: 0 !important;
-        padding: 0;
         position: relative;
     }
 
     .h-right {
         display: none;
-        background-color: var(--white);
+        background: var(--fdgrad);
         padding: 10px 0;
         border-radius: 18px;
         position: absolute;
-        top: 51px;
+        top: 105%;
         left: 25px;
         right: 25px;
     }
@@ -42,7 +43,6 @@
         justify-content: start;
         align-items: center;
         padding: 10px 20px 0px 20px;
-
     }
 
     .language .fa-caret-down {
@@ -67,135 +67,68 @@
     }
 
     .main-content {
-        margin: 10px 20px;
-        display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 130px 130px 130px 130px 350px 350px 350px 350px 350px 350px 130px 130px;
-        grid-column-gap: 22px;
-        grid-row-gap: 22px;
+        grid-template-rows: auto auto 350px 350px 350px 450px 350px 350px auto auto;
     }
 
     .dashboard-students {
-        grid-column: 1 / span 12;
-        text-align: center;
-        padding: 24px 0;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
+        grid-column: 1 / span 6;
+        flex-direction: column;
     }
 
     .dashboard-teachers {
-        text-align: center;
-        padding: 24px 0;
-        grid-column: 1 / span 12;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
+        grid-column: 7 / span 6;
+        flex-direction: column;
     }
 
     .dashboard-parents {
-        text-align: center;
-        padding: 26px 0;
-        grid-column: 1 / span 12;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
+        grid-column: 1 / span 6;
+        flex-direction: column;
     }
 
     .dashboard-earnings {
-        text-align: center;
-        padding: 26px 0;
-        grid-column: 1 / span 12;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
+        grid-column: 7 / span 6;
+        flex-direction: column;
     }
 
     .earnings-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 12;
-        border-radius: 14px;
     }
 
     .expenses-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 12;
-        border-radius: 14px;
     }
 
     .students-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 12;
-        border-radius: 14px;
     }
 
     .event-calender {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 12;
-        border-radius: 14px;
     }
 
     .branches {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 12;
-        border-radius: 14px;
-        background-color: #000000;
-        background-image:
-            radial-gradient(at 47% 33%, hsl(271.91, 99%, 54%) 0, transparent 59%),
-            radial-gradient(at 82% 65%, hsl(88.65, 73%, 48%) 0, transparent 55%);
-        position: relative;
     }
 
     .notice-board {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 12;
-        border-radius: 14px;
-        font-family: var(--font);
-        padding: 0px 10px;
-        background-color: var(--secondary);
-        color: var(--txtwhite);
     }
 
     .facebook-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 6;
-        border-radius: 14px;
-        background-color: var(--navyblu);
-        text-align: center;
     }
 
     .twitter-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 7 / span 6;
-        border-radius: 14px;
-        background-color: var(--primary);
-        text-align: center;
     }
 
     .gplus-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 6;
-        border-radius: 14px;
-        background-color: var(--red);
-        text-align: center;
     }
 
     .linkedin-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 7 / span 6;
-        border-radius: 14px;
-        background-color: var(--icnblu);
-        text-align: center;
     }
 }
 
@@ -242,411 +175,191 @@
     }
 
     .main-content {
-        margin: 10px 20px;
-        display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 130px 130px 500px 500px 500px 500px 600px 800px 130px 130px;
-        grid-column-gap: 22px;
-        grid-row-gap: 22px;
+        grid-template-rows: 130px 130px 500px 500px 500px 500px 600px 600px auto auto
     }
 
     .dashboard-students {
         grid-column: 1 / span 6;
-        text-align: center;
-        padding: 24px 0;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .dashboard-teachers {
-        text-align: center;
-        padding: 24px 0;
         grid-column: 7 / span 6;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .dashboard-parents {
-        text-align: center;
-        padding: 26px 0;
         grid-column: 1 / span 6;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .dashboard-earnings {
-        text-align: center;
-        padding: 26px 0;
         grid-column: 7 / span 6;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .earnings-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-
         grid-column: 1 / span 12;
-        border-radius: 14px;
     }
 
     .expenses-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 12;
-        border-radius: 14px;
     }
 
     .students-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 12;
-        border-radius: 14px;
     }
 
     .event-calender {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 12;
-        border-radius: 14px;
     }
 
     .branches {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 12;
-        border-radius: 14px;
-        background-color: #000000;
-        background-image:
-            radial-gradient(at 47% 33%, hsl(271.91, 99%, 54%) 0, transparent 59%),
-            radial-gradient(at 82% 65%, hsl(88.65, 73%, 48%) 0, transparent 55%);
-        position: relative;
     }
 
     .notice-board {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 12;
-        border-radius: 14px;
-        font-family: var(--font);
-        padding: 0px 10px;
-        background-color: var(--secondary);
-        color: var(--txtwhite);
     }
 
     .facebook-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 6;
-        border-radius: 14px;
-        background-color: var(--navyblu);
-        text-align: center;
     }
 
     .twitter-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 7 / span 6;
-        border-radius: 14px;
-        background-color: var(--primary);
-        text-align: center;
     }
 
     .gplus-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 6;
-        border-radius: 14px;
-        background-color: var(--red);
-        text-align: center;
     }
 
     .linkedin-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 7 / span 6;
-        border-radius: 14px;
-        background-color: var(--icnblu);
-        text-align: center;
     }
 }
 
 @media(min-width:992px) {
-
-
     .main-content {
-        margin: 10px 20px;
-        display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 180px 180px 500px 500px 500px 150px 150px;
-        grid-column-gap: 22px;
-        grid-row-gap: 22px;
+        grid-template-rows: 180px 180px 500px 500px 500px auto auto;
     }
 
     .dashboard-students {
         grid-column: 1 / span 6;
-        text-align: center;
-        padding: 24px 0;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .dashboard-teachers {
-        text-align: center;
-        padding: 24px 0;
         grid-column: 7 / span 6;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .dashboard-parents {
-        text-align: center;
-        padding: 26px 0;
         grid-column: 1 / span 6;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .dashboard-earnings {
-        text-align: center;
-        padding: 26px 0;
         grid-column: 7 / span 6;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .earnings-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 6;
-        border-radius: 14px;
     }
 
     .expenses-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 7 / span 6;
-        border-radius: 14px;
     }
 
     .students-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 6;
-        border-radius: 14px;
     }
 
     .event-calender {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 7 / span 6;
-        border-radius: 14px;
     }
 
     .branches {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 6;
-        border-radius: 14px;
-        background-color: #000000;
-        background-image:
-            radial-gradient(at 47% 33%, hsl(271.91, 99%, 54%) 0, transparent 59%),
-            radial-gradient(at 82% 65%, hsl(88.65, 73%, 48%) 0, transparent 55%);
-        position: relative;
     }
 
     .notice-board {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 7 / span 6;
-        border-radius: 14px;
-        font-family: var(--font);
-        padding: 0px 10px;
-        background-color: var(--secondary);
-        color: var(--txtwhite);
     }
 
-
-
     .facebook-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 6;
-        border-radius: 14px;
-        background-color: var(--navyblu);
-        text-align: center;
     }
 
     .twitter-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 7 / span 6;
-        border-radius: 14px;
-        background-color: var(--primary);
-        text-align: center;
     }
 
     .gplus-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 6;
-        border-radius: 14px;
-        background-color: var(--red);
-        text-align: center;
     }
 
     .linkedin-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 7 / span 6;
-        border-radius: 14px;
-        background-color: var(--icnblu);
-        text-align: center;
     }
 }
 
 @media(min-width:1200px) {
     .main-content {
-        margin: 10px 20px;
-        display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 149px 520px 490px 149px;
-        grid-column-gap: 22px;
-        grid-row-gap: 22px;
+        grid-template-rows: 149px 520px 490px auto;
     }
 
     .dashboard-students {
         grid-column: 1 / span 3;
-        text-align: center;
-        padding: 24px 0;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .dashboard-teachers {
-        text-align: center;
-        padding: 26px 0;
         grid-column: 4 / span 3;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .dashboard-parents {
-        text-align: center;
-        padding: 26px 0;
         grid-column: 7 / span 3;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .dashboard-earnings {
-        text-align: center;
-        padding: 26px 0;
         grid-column: 10 / span 3;
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
-        border-radius: 14px;
     }
 
     .earnings-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 6;
-        border-radius: 14px;
     }
 
     .expenses-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 7 / span 3;
-        border-radius: 14px;
     }
 
     .students-graph {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 10 / span 3;
-        border-radius: 14px;
     }
 
     .event-calender {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 4;
-        border-radius: 14px;
     }
 
     .branches {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 5 / span 4;
-        border-radius: 14px;
-        background-color: #000000;
-        background-image:
-            radial-gradient(at 47% 33%, hsl(271.91, 99%, 54%) 0, transparent 59%),
-            radial-gradient(at 82% 65%, hsl(88.65, 73%, 48%) 0, transparent 55%);
-        position: relative;
     }
 
     .notice-board {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 9 / span 4;
-        border-radius: 14px;
-        font-family: var(--font);
-        padding: 0px 10px;
-        background-color: var(--secondary);
-        color: var(--txtwhite);
     }
 
     .facebook-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 1 / span 3;
-        border-radius: 14px;
-        background-color: var(--navyblu);
-        text-align: center;
     }
 
     .twitter-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 4 / span 3;
-        border-radius: 14px;
-        background-color: var(--primary);
-        text-align: center;
     }
 
     .gplus-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 7 / span 3;
-        border-radius: 14px;
-        background-color: var(--red);
-        text-align: center;
     }
 
     .linkedin-handle {
-        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.1);
-        background-color: var(--white);
         grid-column: 10 / span 3;
-        border-radius: 14px;
-        background-color: var(--icnblu);
-        text-align: center;
     }
-
-
 }
 
 @media(min-width:1400px) {}

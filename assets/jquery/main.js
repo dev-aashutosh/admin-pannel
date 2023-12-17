@@ -24,7 +24,15 @@ $(document).ready(function () {
   $('.fa-bars').click(function () {
     $('aside').toggle('2000');
   });
+  // modeswitch
+
+
+
+
+
 });
+
+
 // counter js 
 $(document).ready(function () {
 

@@ -10,12 +10,10 @@ var options = {
   chart: {
     height: '100%',
     type: 'area',
+    foreColor: '#aaaaaa'
   },
   dataLabels: {
     enabled: false,
-    style: {
-      colors: ['blue', 'red']
-    }
   },
   fill: {
     colors: ['blue', 'red'],
@@ -34,17 +32,17 @@ var options = {
       fontSize: '22px',
       fontWeight: 'bold',
       fontFamily: undefined,
-      color: '#263238'
     },
   },
   xaxis: {
     type: 'Days',
-    categories: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    categories: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+
   },
   yaxis: {
     type: 'Income',
     categories: ["0", "10", "20", "30", "40", "50", "100"]
-  },
+  }
 };
 
 var chart = new ApexCharts(document.querySelector("#echart"), options);
@@ -62,7 +60,8 @@ var options = {
   }],
   chart: {
     type: 'bar',
-    height: '100%'
+    height: '100%',
+    foreColor: '#aaaaaa',
   },
   plotOptions: {
     bar: {
@@ -82,7 +81,6 @@ var options = {
       fontSize: '22px',
       fontWeight: 'bold',
       fontFamily: undefined,
-      color: '#263238'
     },
   },
   dataLabels: {
@@ -102,9 +100,8 @@ var options = {
     }
   },
   fill: {
-    opacity: 1
+    colors: ['#dfff00', '#ca2c92'],
   },
-  colors: ['#F89400', '#85FF00'],
   tooltip: {
     y: {
       formatter: function (val) {
@@ -152,6 +149,7 @@ var options = {
   chart: {
     type: 'bar',
     height: '100%',
+    foreColor: '#aaaaaa',
   },
   plotOptions: {
     bar: {
@@ -163,14 +161,14 @@ var options = {
     },
   },
   colors: [
-    '#F44F5E',
-    '#E55A89',
-    '#D863B1',
-    '#CA6CD8',
-    '#B57BED',
-    '#8D95EB',
-    '#62ACEA',
-    '#4BC3E6',
+    '#624cab',
+    '#8b3103',
+    '#355e3b',
+    '#36311f',
+    '#008080',
+    '#5cf64a',
+    '#472c4c',
+    '#9F0909',
   ],
   dataLabels: {
     enabled: true,
@@ -192,7 +190,6 @@ var options = {
       fontSize: '22px',
       fontWeight: 'bold',
       fontFamily: undefined,
-      color: '#263238'
     },
   },
   xaxis: {
