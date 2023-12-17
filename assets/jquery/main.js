@@ -24,7 +24,42 @@ $(document).ready(function () {
   $('.fa-bars').click(function () {
     $('aside').toggle('2000');
   });
+  // modeswitch
+  $('.fa-cloud-moon').click(function () {
+    $(this).hide();
+    $('.fa-sun-plant-wilt').show();
+    $(':root').css('--white', '#121212');
+    $(':root').css('--black', '#ffffffba');
+    $(':root').css('--bgprime', '#000000');
+    $(':root').css('--primary', '#121212');
+    $(':root').css('--icnblue1', '#ffffffba');
+    // lightshades
+    $(':root').css('--lightred', '#4c1a1a');
+    $(':root').css('--lightblu', '#0e293f');
+    $(':root').css('--lightorng', '#472c10');
+    $(':root').css('--limegreen', '#0b3b20');
+  });
+  $('.fa-sun-plant-wilt').click(function () {
+    $(this).hide();
+    $('.fa-cloud-moon').show();
+    $(':root').css('--white', '#ffffff');
+    $(':root').css('--black', '#000000');
+    $(':root').css('--bgprime', '#f0f1f3');
+    $(':root').css('--primary', '#042954');
+    $(':root').css('--icnblue1', '#042954');
+    // lightshades
+    $(':root').css('--lightred', '#FFEAEA');
+    $(':root').css('--lightblu', '#E1F1FF');
+    $(':root').css('--lightorng', '#FFF2D8');
+    $(':root').css('--limegreen', '#D1F3E0');
+  });
+
+
+
+
 });
+
+
 // counter js 
 $(document).ready(function () {
 
