@@ -25,7 +25,16 @@ $(document).ready(function () {
     $('aside').toggle('2000');
   });
   // modeswitch
+  $('.fa-cloud-moon').click(function () {
+    $(this).hide();
+    $('.fa-sun-plant-wilt').show();
 
+  });
+  $('.fa-sun-plant-wilt').click(function () {
+    $(this).hide();
+    $('.fa-cloud-moon').show();
+    $(':root').css();
+  });
 
 
 

@@ -1,69 +1,37 @@
 @media(max-width:768px) {
+
+    .admin-img,
+    .fa-language,
+    .fa-bars,
+    .fa-id-card {
+        display: block;
+    }
+
+    .search,
+    .log-in-out {
+        display: none;
+    }
+
+    .admin-img {
+        border-radius: 50%;
+    }
+
+    .user {
+        display: none;
+    }
+
     aside {
         display: none;
         transition: none;
-        /* padding-top: 10px; */
     }
 
     header {
         margin-left: 0 !important;
-        position: relative;
-    }
-
-    .h-right {
-        display: none;
-        background: var(--fdgrad);
-        padding: 10px 0;
-        border-radius: 18px;
-        position: absolute;
-        top: 105%;
-        left: 25px;
-        right: 25px;
+        padding-right: 10px;
     }
 
     main {
         margin-left: 0 !important;
-    }
-
-    .search {
-        display: none;
-    }
-
-    .profile {
-        border-bottom: 1px solid var(--grey);
-        min-width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px 5px 20px;
-    }
-
-    .language {
-        min-width: 100%;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        padding: 10px 20px 0px 20px;
-    }
-
-    .language .fa-caret-down {
-        position: absolute;
-        right: 32px;
-    }
-
-    .admin-list {
-        top: 200%;
-        left: 0;
-        right: 0px;
-    }
-
-    .lang-list {
-        top: 150%;
-        left: 0;
-        right: 0px;
-    }
-
-    .log-in-out {
-        display: none;
     }
 
     .main-content {
