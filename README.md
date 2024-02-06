@@ -17,5 +17,3 @@ Experience the dashboard firsthand! [Live Preview Here](https://dev-aashutosh.gi
 
 ## 🤝 Contributing
 Contributions are welcome! Share your ideas, suggestions, or bug fixes through pull requests.
-
-🎉 Happy Dashboarding!
